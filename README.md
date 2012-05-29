@@ -41,7 +41,7 @@ php composer.phar install
 Copyright
 ---------
 
-Copyright (c) 2011 Konstantin Kudryashov (ever.zet). See LICENSE for details.
+Copyright (c) 2012 Konstantin Kudryashov (ever.zet). See LICENSE for details.
 
 Maintainers
 -----------
