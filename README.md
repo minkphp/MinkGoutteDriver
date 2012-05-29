@@ -43,7 +43,7 @@ Copyright
 
 Copyright (c) 2011 Konstantin Kudryashov (ever.zet). See LICENSE for details.
 
-Contributors
-------------
+Maintainers
+-----------
 
 * Konstantin Kudryashov [everzet](http://github.com/everzet)
