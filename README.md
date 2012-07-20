@@ -1,6 +1,8 @@
 Mink Goutte Driver
 ==================
 
+- [![Build Status](https://secure.travis-ci.org/Behat/MinkGoutteDriver.png?branch=master)](http://travis-ci.org/Behat/MinkGoutteDriver)
+
 Usage Example
 -------------
 
