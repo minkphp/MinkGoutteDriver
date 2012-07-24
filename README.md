@@ -15,7 +15,7 @@ use Behat\Mink\Mink,
 $startUrl = 'http://example.com';
 
 $mink = new Mink(array(
-    'goutte' => new Session(new GoutteDriver(GoutteClient($startUrl))),
+    'goutte' => new Session(new GoutteDriver(new GoutteClient($startUrl))),
 ));
 
 $mink->getSession('goutte')->getPage()->findLink('Chat')->click();
