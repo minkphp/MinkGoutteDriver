@@ -79,7 +79,7 @@ class GoutteDriver extends BrowserKitDriver
     {
         $field = $this->getFormField($xpath);
         // a way to set raw path to the file is available from Symfony 2.2
-        if (is_callable($field, 'setFilePath')) {
+        if (is_callable(array($field, 'setFilePath'))) {
             $field->setFilePath($path);
         } else {
             $field->setValue($path);
