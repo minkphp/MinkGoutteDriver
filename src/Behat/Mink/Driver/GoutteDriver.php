@@ -68,6 +68,17 @@ class GoutteDriver extends BrowserKitDriver
     {
         return $this->getClient()->getResponse()->getStatus();
     }
+     
+
+   /**
+    * Capture a screenshot of the current window.
+    *
+    * @throws UnsupportedDriverActionException
+    */
+    public function getScreenshot()
+    {
+        throw new UnsupportedDriverActionException('Screenshots are not supported by %s', $this);
+    }
 
     /**
      * Attaches file path to file field located by it's XPath query.
