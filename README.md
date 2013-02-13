@@ -30,22 +30,18 @@ Installation
 {
     "requires": {
         "behat/mink":               "1.4.*",
-        "behat/mink-goutte-driver": "*"
+        "behat/mink-goutte-driver": "1.0.*@dev"
     }
 }
 ```
 
 ``` bash
-curl http://getcomposer.org/installer | php
-php composer.phar install
+$> curl http://getcomposer.org/installer | php
+$> php composer.phar install
 ```
-
-Copyright
----------
-
-Copyright (c) 2012 Konstantin Kudryashov (ever.zet). See LICENSE for details.
 
 Maintainers
 -----------
 
 * Konstantin Kudryashov [everzet](http://github.com/everzet)
+- Other [awesome developers](https://github.com/Behat/MinkGoutteDriver/graphs/contributors)
