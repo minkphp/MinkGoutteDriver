@@ -70,23 +70,6 @@ class GoutteDriver extends BrowserKitDriver
     }
 
     /**
-     * Attaches file path to file field located by it's XPath query.
-     *
-     * @param string $xpath
-     * @param string $path
-     */
-    public function attachFile($xpath, $path)
-    {
-        $field = $this->getFormField($xpath);
-        // a way to set raw path to the file is available from Symfony 2.2
-        if (is_callable(array($field, 'setFilePath'))) {
-            $field->setFilePath($path);
-        } else {
-            $field->setValue($path);
-        }
-    }
-
-    /**
      * Prepares URL for visiting.
      *
      * @param string $url
