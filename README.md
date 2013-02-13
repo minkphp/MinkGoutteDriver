@@ -28,7 +28,7 @@ Installation
 
 ``` json
 {
-    "requires": {
+    "require": {
         "behat/mink":               "1.4.*",
         "behat/mink-goutte-driver": "1.0.*@dev"
     }
