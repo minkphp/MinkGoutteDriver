@@ -44,4 +44,4 @@ Maintainers
 -----------
 
 * Konstantin Kudryashov [everzet](http://github.com/everzet)
-- Other [awesome developers](https://github.com/Behat/MinkGoutteDriver/graphs/contributors)
+* Other [awesome developers](https://github.com/Behat/MinkGoutteDriver/graphs/contributors)
