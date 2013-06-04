@@ -7,6 +7,7 @@ use Goutte\Client as BaseClient;
 use Symfony\Component\BrowserKit\Response;
 
 use Guzzle\Http\Message\Response as GuzzleResponse;
+use Guzzle\Http\Message\Header as GuzzleHeader;
 
 /*
  * This file is part of the Behat\Mink.
@@ -30,6 +31,14 @@ class Client extends BaseClient
         $statusCode  = $response->getStatusCode();
         $headers     = $response->getHeaders()->getAll();
         $contentType = $response->getContentType();
+
+        $headers = array_map(function ($header) {
+            if ($header instanceof GuzzleHeader) {
+                return $header->raw();
+            }
+
+            return $header;
+        }, $headers);
 
         if (!$contentType || false === strpos($contentType, 'charset=')) {
             if (preg_match('/\<meta[^\>]+charset *= *["\']?([a-zA-Z\-0-9]+)/i', $body, $matches)) {
