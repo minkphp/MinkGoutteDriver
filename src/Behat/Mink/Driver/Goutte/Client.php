@@ -27,8 +27,6 @@ class Client extends BaseClient
     protected function createResponse(GuzzleResponse $response)
     {
         $body        = $response->getBody(true);
-        $statusCode  = $response->getStatusCode();
-        $headers     = $response->getHeaders()->getAll();
         $contentType = $response->getContentType();
 
         if (!$contentType || false === strpos($contentType, 'charset=')) {
@@ -36,8 +34,8 @@ class Client extends BaseClient
                 $contentType .= ';charset='.$matches[1];
             }
         }
-        $headers['Content-Type'] = $contentType;
+        $response->setHeader('Content-Type', $contentType);
 
-        return new Response($body, $statusCode, $headers);
+        return parent::createResponse($response);
     }
 }
