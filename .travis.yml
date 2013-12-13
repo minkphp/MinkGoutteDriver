@@ -11,9 +11,8 @@ before_script:
   - export WEB_FIXTURES_HOST=http://localhost
   - export WEB_FIXTURES_BROWSER=firefox
 
-  - curl http://getcomposer.org/installer | php
-  - php composer.phar require --no-update symfony/symfony=$SYMFONY_VERSION
-  - php composer.phar install --dev --prefer-source
+  - composer require --no-update symfony/symfony=$SYMFONY_VERSION
+  - composer install --dev --prefer-source
 
   - sudo apt-get update
   - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5
