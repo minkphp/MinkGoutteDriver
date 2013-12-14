@@ -1,0 +1,21 @@
+filter:
+    excluded_paths:
+        - 'vendor/*'
+    paths:
+        - 'src/*'
+        - 'tests/*'
+
+tools:
+    php_cpd: true
+
+    php_pdepend:
+        excluded_dirs: [vendor]
+
+    php_code_sniffer:
+        enabled: true
+        config:
+            standard: psr2
+            ruleset: ~
+
+#    external_code_coverage:
+#        timeout: 600
