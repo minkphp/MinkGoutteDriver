@@ -1,7 +1,9 @@
 Mink Goutte Driver
 ==================
 
-- [![Build Status](https://secure.travis-ci.org/Behat/MinkGoutteDriver.png?branch=master)](http://travis-ci.org/Behat/MinkGoutteDriver)
+[![Latest Stable Version](https://poser.pugx.org/behat/mink-goutte-driver/v/stable.png)](https://packagist.org/packages/behat/mink-goutte-driver)
+[![Total Downloads](https://poser.pugx.org/behat/mink-goutte-driver/downloads.png)](https://packagist.org/packages/behat/mink-goutte-driver)
+[![Build Status](https://secure.travis-ci.org/Behat/MinkGoutteDriver.png?branch=master)](http://travis-ci.org/Behat/MinkGoutteDriver)
 
 Usage Example
 -------------
