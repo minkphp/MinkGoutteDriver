@@ -11,7 +11,8 @@
 namespace Behat\Mink\Driver\Goutte;
 
 use Goutte\Client as BaseClient;
-use Guzzle\Http\Message\Response as GuzzleResponse;
+
+use GuzzleHttp\Message\Response;
 
 /**
  * Client overrides to support Mink functionality.
@@ -21,10 +22,10 @@ class Client extends BaseClient
     /**
      * Reads response meta tags to guess content-type charset.
      */
-    protected function createResponse(GuzzleResponse $response)
+    protected function createResponse(Response $response)
     {
-        $body        = $response->getBody(true);
-        $contentType = $response->getContentType();
+        $body        = $response->getBody();
+        $contentType = $response->getHeader('Content-Type');
 
         if (!$contentType || false === strpos($contentType, 'charset=')) {
             if (preg_match('/\<meta[^\>]+charset *= *["\']?([a-zA-Z\-0-9]+)/i', $body, $matches)) {

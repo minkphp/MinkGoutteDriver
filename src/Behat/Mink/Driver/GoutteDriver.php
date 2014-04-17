@@ -48,7 +48,12 @@ class GoutteDriver extends BrowserKitDriver
      */
     public function setRequestHeader($name, $value)
     {
-        $this->getClient()->setHeader($name, $value);
+        if ($value) {
+          $this->getClient()->setHeader($name, $value);
+        }
+        else {
+          $this->getClient()->removeHeader($name);
+        }
     }
 
     /**
