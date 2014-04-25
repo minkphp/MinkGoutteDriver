@@ -37,7 +37,11 @@ class GoutteDriver extends BrowserKitDriver
      */
     public function setBasicAuth($user, $password)
     {
-        $this->getClient()->setAuth($user, $password);
+        if ($user) {
+            $this->getClient()->setAuth($user, $password);
+        } else {
+            $this->getClient()->resetAuth();
+        }
     }
 
     /**
@@ -48,7 +52,11 @@ class GoutteDriver extends BrowserKitDriver
      */
     public function setRequestHeader($name, $value)
     {
-        $this->getClient()->setHeader($name, $value);
+        if ($value) {
+            $this->getClient()->setHeader($name, $value);
+        } else {
+            $this->getClient()->removeHeader($name);
+        }
     }
 
     /**
