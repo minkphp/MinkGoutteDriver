@@ -37,18 +37,12 @@ class GoutteDriver extends BrowserKitDriver
      */
     public function setBasicAuth($user, $password)
     {
-        $this->getClient()->setAuth($user, $password);
-    }
+        if (false === $user) {
+            $this->getClient()->resetAuth();
 
-    /**
-     * Sets specific request header on client.
-     *
-     * @param string $name
-     * @param string $value
-     */
-    public function setRequestHeader($name, $value)
-    {
-        $this->getClient()->setHeader($name, $value);
+            return;
+        }
+        $this->getClient()->setAuth($user, $password);
     }
 
     /**

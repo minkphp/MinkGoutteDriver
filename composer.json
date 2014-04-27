@@ -18,7 +18,7 @@
         "php":                           ">=5.3.1",
         "behat/mink":                    "~1.5@dev",
         "behat/mink-browserkit-driver":  "~1.1@dev",
-        "fabpot/goutte":                 "~1.0"
+        "fabpot/goutte":                 "~1.0,>=1.0.4"
     },
 
     "autoload": {
