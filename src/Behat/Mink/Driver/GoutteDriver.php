@@ -54,6 +54,15 @@ class GoutteDriver extends BrowserKitDriver
     /**
      * {@inheritdoc}
      */
+    public function reset()
+    {
+        parent::reset();
+        $this->getClient()->resetAuth();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     protected function prepareUrl($url)
     {
         return $url;
