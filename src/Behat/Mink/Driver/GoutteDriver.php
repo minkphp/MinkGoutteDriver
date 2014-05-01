@@ -30,10 +30,7 @@ class GoutteDriver extends BrowserKitDriver
     }
 
     /**
-     * Sets HTTP Basic authentication parameters
-     *
-     * @param string|Boolean $user     user name or false to disable authentication
-     * @param string         $password password
+     * {@inheritdoc}
      */
     public function setBasicAuth($user, $password)
     {
@@ -46,11 +43,7 @@ class GoutteDriver extends BrowserKitDriver
     }
 
     /**
-     * Prepares URL for visiting.
-     *
-     * @param string $url
-     *
-     * @return string
+     * {@inheritdoc}
      */
     protected function prepareUrl($url)
     {
