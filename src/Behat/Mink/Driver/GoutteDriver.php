@@ -22,7 +22,7 @@ class GoutteDriver extends BrowserKitDriver
     /**
      * Initializes Goutte driver.
      *
-     * @param Client $client HttpKernel client instance
+     * @param Client $client Goutte client instance
      */
     public function __construct(Client $client = null)
     {
@@ -39,7 +39,16 @@ class GoutteDriver extends BrowserKitDriver
 
             return;
         }
+
         $this->getClient()->setAuth($user, $password);
+    }
+
+    /**
+     * @return Client
+     */
+    public function getClient()
+    {
+        return parent::getClient();
     }
 
     /**
