@@ -44,6 +44,10 @@ class GoutteDriver extends BrowserKitDriver
     }
 
     /**
+     * Gets the Goutte client.
+     * 
+     * The method is overwritten only to provide the appropriate return type hint.
+     * 
      * @return Client
      */
     public function getClient()
