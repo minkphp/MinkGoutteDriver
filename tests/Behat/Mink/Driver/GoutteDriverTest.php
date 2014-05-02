@@ -5,7 +5,7 @@ namespace Tests\Behat\Mink\Driver;
 use Behat\Mink\Driver\GoutteDriver;
 
 /**
- * @group gouttedriver
+ * @group functional
  */
 class GoutteDriverTest extends GeneralDriverTest
 {
