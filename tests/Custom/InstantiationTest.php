@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Behat\Mink\Driver;
+namespace Behat\Mink\Tests\Driver\Custom;
 
 use Behat\Mink\Driver\GoutteDriver;
 
 /**
  * @group unit
  */
-class ExtraDriverTest extends \PHPUnit_Framework_TestCase
+class InstantiationTest extends \PHPUnit_Framework_TestCase
 {
     public function testInstantiateWithClient()
     {
