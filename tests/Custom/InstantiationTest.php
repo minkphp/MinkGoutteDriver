@@ -4,14 +4,11 @@ namespace Behat\Mink\Tests\Driver\Custom;
 
 use Behat\Mink\Driver\GoutteDriver;
 
-/**
- * @group unit
- */
 class InstantiationTest extends \PHPUnit_Framework_TestCase
 {
     public function testInstantiateWithClient()
     {
-        $client = $this->getMockBuilder('Behat\Mink\Driver\Goutte\Client')->disableOriginalConstructor()->getMock();
+        $client = $this->getMockBuilder('Goutte\Client')->disableOriginalConstructor()->getMock();
         $client->expects($this->once())
             ->method('followRedirects')
             ->with(true);
