@@ -35,6 +35,8 @@ echo $session->getCurrentUrl() . PHP_EOL;
 Installation
 ------------
 
+Add a file composer.json with content:
+
 ``` json
 {
     "require": {
@@ -43,6 +45,8 @@ Installation
     }
 }
 ```
+
+(or merge the above into your project's existing composer.json file)
 
 ``` bash
 $> curl -sS https://getcomposer.org/installer | php
