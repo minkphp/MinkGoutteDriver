@@ -28,8 +28,8 @@ $mink = new Mink(array(
 
 $session = $mink->getSession('goutte');
 $session->visit("http://php.net/");
-$session->getPage()->findLink('Downloads')->click();
-printf("%s\n",$session->getCurrentUrl());
+$session->getPage()->clickLink('Downloads');
+echo $session->getCurrentUrl() . PHP_EOL;
 ```
 
 Installation
