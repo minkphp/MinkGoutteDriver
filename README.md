@@ -15,22 +15,27 @@ Usage Example
 ``` php
 <?php
 
+require "vendor/autoload.php";
+
 use Behat\Mink\Mink,
     Behat\Mink\Session,
     Behat\Mink\Driver\GoutteDriver,
     Behat\Mink\Driver\Goutte\Client as GoutteClient;
 
-$startUrl = 'http://example.com';
-
 $mink = new Mink(array(
-    'goutte' => new Session(new GoutteDriver(new GoutteClient($startUrl))),
+    'goutte' => new Session(new GoutteDriver(new GoutteClient())),
 ));
 
-$mink->getSession('goutte')->getPage()->findLink('Chat')->click();
+$session = $mink->getSession('goutte');
+$session->visit("http://php.net/");
+$session->getPage()->clickLink('Downloads');
+echo $session->getCurrentUrl() . PHP_EOL;
 ```
 
 Installation
 ------------
+
+Add a file composer.json with content:
 
 ``` json
 {
@@ -40,6 +45,8 @@ Installation
     }
 }
 ```
+
+(or merge the above into your project's existing composer.json file)
 
 ``` bash
 $> curl -sS https://getcomposer.org/installer | php
