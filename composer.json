@@ -5,6 +5,12 @@
     "homepage":     "http://mink.behat.org/",
     "type":         "mink-driver",
     "license":      "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:csarrazi/Goutte.git"
+        }
+    ],
 
     "authors": [
         {
@@ -18,7 +24,7 @@
         "php":                           ">=5.3.1",
         "behat/mink":                    "~1.6@dev",
         "behat/mink-browserkit-driver":  "~1.2@dev",
-        "fabpot/goutte":                 "~1.0.4|~2.0"
+        "fabpot/goutte":                 "dev-fix-form-issue"
     },
 
     "autoload": {
