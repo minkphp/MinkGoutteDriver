@@ -16,13 +16,12 @@
 
     "require": {
         "php":                           ">=5.3.1",
-        "behat/mink":                    "~1.6@dev",
         "behat/mink-browserkit-driver":  "~1.2@dev",
         "fabpot/goutte":                 "~1.0.4|~2.0|~3.1"
     },
 
     "require-dev": {
-        "symfony/phpunit-bridge": "~2.7|~3.0"
+        "mink/driver-testsuite": "dev-master"
     },
 
     "autoload": {
