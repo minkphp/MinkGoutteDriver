@@ -53,6 +53,17 @@ $> curl -sS https://getcomposer.org/installer | php
 $> php composer.phar install
 ```
 
+## Testing
+
+In a cloned copy of this repository:
+
+- Install required dependencies:
+  `composer install`
+- Start a php server with the web fixtures:
+  `cd vendor/mink/driver-testsuite/web-fixtures && php -S 0.0.0.0:8002`
+- Run the tests in a separate terminal:
+  `vendor/bin/phpunit`
+
 Maintainers
 -----------
 
