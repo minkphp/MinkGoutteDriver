@@ -1,5 +1,4 @@
-Mink Goutte Driver
-==================
+# Mink Goutte Driver
 
 [![Latest Stable Version](https://poser.pugx.org/behat/mink-goutte-driver/v/stable.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 [![Latest Unstable Version](https://poser.pugx.org/behat/mink-goutte-driver/v/unstable.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
@@ -9,10 +8,9 @@ Mink Goutte Driver
 [![Code Coverage](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/)
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 
-Usage Example
--------------
+## Usage
 
-``` php
+```php
 <?php
 
 require "vendor/autoload.php";
@@ -32,18 +30,10 @@ $session->getPage()->clickLink('Downloads');
 echo $session->getCurrentUrl() . PHP_EOL;
 ```
 
-Installation
-------------
+## Installation
 
-Add a file composer.json with content:
-
-``` json
-{
-    "require": {
-        "behat/mink":               "~1.5",
-        "behat/mink-goutte-driver": "~1.0"
-    }
-}
+```bash
+composer require behat/mink:~1.5 behat/mink-goutte-driver:~1.0
 ```
 
 (or merge the above into your project's existing composer.json file)
