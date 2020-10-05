@@ -8,11 +8,24 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/)
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 
+* https://github.com/minkphp/MinkGoutteDriver
+
+## Installation
+
+```bash
+composer require behat/mink:~1.5 behat/mink-goutte-driver:~1.0
+```
+
+(or merge the above into your project's existing composer.json file)
+
+``` bash
+$> curl -sS https://getcomposer.org/installer | php
+$> php composer.phar install
+```
+
 ## Usage
 
 ```php
-<?php
-
 require "vendor/autoload.php";
 
 use Behat\Mink\Mink,
@@ -30,21 +43,11 @@ $session->getPage()->clickLink('Downloads');
 echo $session->getCurrentUrl() . PHP_EOL;
 ```
 
-## Installation
+## License
 
-```bash
-composer require behat/mink:~1.5 behat/mink-goutte-driver:~1.0
-```
+MIT license, copyright 2012 Konstantin Kudryashov <ever.zet@gmail.com>, see [LICENSE](LICENSE).
 
-(or merge the above into your project's existing composer.json file)
-
-``` bash
-$> curl -sS https://getcomposer.org/installer | php
-$> php composer.phar install
-```
-
-Maintainers
------------
+## Maintainers
 
 * Christophe Coevoet [stof](https://github.com/stof)
 * Other [awesome developers](https://github.com/minkphp/MinkGoutteDriver/graphs/contributors)
