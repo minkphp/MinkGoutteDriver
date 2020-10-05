@@ -59,13 +59,12 @@ In a cloned copy of this repository:
 
 - Install required dependencies:
   `composer install`
-- Start a php server with the web fixtures:
-  `cd vendor/mink/driver-testsuite/web-fixtures && php -S 0.0.0.0:8002`
+- Start a php server for web fixtures (default URL is http://localhost:8002, override with WEB_FIXTURES_HOST):
+  `cd vendor/mink/driver-testsuite/web-fixtures && php -S localhost:8002`
 - Run the tests in a separate terminal:
   `vendor/bin/phpunit`
 
 Maintainers
------------
 
 * Christophe Coevoet [stof](https://github.com/stof)
 * Other [awesome developers](https://github.com/minkphp/MinkGoutteDriver/graphs/contributors)
