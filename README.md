@@ -8,8 +8,6 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/)
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 
-* https://github.com/minkphp/MinkGoutteDriver
-
 ## Installation
 
 ```bash
@@ -42,6 +40,10 @@ $session->visit("http://php.net/");
 $session->getPage()->clickLink('Downloads');
 echo $session->getCurrentUrl() . PHP_EOL;
 ```
+
+## Issues
+
+Report issues via the issue queue at https://github.com/minkphp/MinkGoutteDriver
 
 ## License
 
