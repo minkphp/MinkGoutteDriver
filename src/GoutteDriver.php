@@ -70,6 +70,13 @@ class GoutteDriver extends BrowserKitDriver
      */
     protected function prepareUrl($url)
     {
+        $parts = parse_url($url);
+        if (isset($parts['user']) || isset($parts['pass'])) {
+            $this->setBasicAuth(
+                isset($parts['user']) ? $parts['user'] : '',
+                isset($parts['pass']) ? $parts['pass'] : ''
+            );
+        }
         return $url;
     }
 }
