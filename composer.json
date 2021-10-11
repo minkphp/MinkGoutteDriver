@@ -2,7 +2,7 @@
     "name":         "behat/mink-goutte-driver",
     "description":  "Goutte driver for Mink framework",
     "keywords":     ["goutte", "headless", "testing", "browser"],
-    "homepage":     "http://mink.behat.org/",
+    "homepage":     "https://mink.behat.org/",
     "type":         "mink-driver",
     "license":      "MIT",
 
