@@ -4,9 +4,7 @@ Mink Goutte Driver
 [![Latest Stable Version](https://poser.pugx.org/behat/mink-goutte-driver/v/stable.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 [![Latest Unstable Version](https://poser.pugx.org/behat/mink-goutte-driver/v/unstable.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 [![Total Downloads](https://poser.pugx.org/behat/mink-goutte-driver/downloads.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
-[![Build Status](https://travis-ci.org/minkphp/MinkGoutteDriver.svg?branch=master)](https://travis-ci.org/minkphp/MinkGoutteDriver)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/)
-[![Code Coverage](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minkphp/MinkGoutteDriver/)
+[![CI](https://github.com/minkphp/MinkGoutteDriver/actions/workflows/tests.yml/badge.svg)](https://github.com/minkphp/MinkGoutteDriver/actions/workflows/tests.yml)
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 
 Usage Example
