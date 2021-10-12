@@ -1,3 +1,15 @@
+1.3.0 / 2021-10-12
+==================
+
+Removed:
+
+* Removed support for PHP 5.3
+
+Testsuite:
+
+* Added CI jobs for PHP 7.1, 7.2, 7.3, 7.4, 80 and 8.1
+* Migrated to use `mink/driver-testsuite`
+
 1.2.1 / 2016-03-05
 ==================
 
