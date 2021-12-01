@@ -51,6 +51,13 @@ $> curl -sS https://getcomposer.org/installer | php
 $> php composer.phar install
 ```
 
+Run tests
+------------
+
+``` bash
+$> ./vendor/bin/phpunit
+```
+
 Maintainers
 -----------
 

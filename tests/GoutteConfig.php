@@ -1,6 +1,6 @@
 <?php
 
-namespace Behat\Mink\Tests\Driver;
+namespace Behat\Mink\Driver\Tests;
 
 use Behat\Mink\Driver\GoutteDriver;
 

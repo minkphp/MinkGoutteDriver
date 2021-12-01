@@ -1,6 +1,6 @@
 <?php
 
-namespace Behat\Mink\Tests\Driver\Custom;
+namespace Behat\Mink\Driver\Tests\Custom;
 
 use Behat\Mink\Driver\GoutteDriver;
 use PHPUnit\Framework\TestCase;
@@ -22,7 +22,6 @@ class InstantiationTest extends TestCase
     public function testInstantiateWithoutClient()
     {
         $driver = new GoutteDriver();
-
         $this->assertInstanceOf('Behat\Mink\Driver\Goutte\Client', $driver->getClient());
     }
 }

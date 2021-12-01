@@ -2,18 +2,21 @@
 
 <phpunit colors="true" bootstrap="vendor/autoload.php">
     <testsuites>
-        <testsuite name="Driver test suite">
+        <!-- <testsuite name="Driver test suite">
             <directory>tests</directory>
             <directory>vendor/mink/driver-testsuite/tests/Basic</directory>
             <directory>vendor/mink/driver-testsuite/tests/Form</directory>
+        </testsuite> -->
+        <testsuite name="TesteSuite">
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
 
-    <php>
-        <var name="driver_config_factory" value="Behat\Mink\Tests\Driver\GoutteConfig::getInstance" />
+    <!-- <php>
+        <var name="driver_config_factory" value="Behat\Mink\Driver\Tests\GoutteConfig::getInstance" />
 
-        <!--server name="WEB_FIXTURES_HOST" value="http://test.mink.dev" /-->
-    </php>
+        server name="WEB_FIXTURES_HOST" value="http://test.mink.dev" /
+    </php> -->
 
     <filter>
         <whitelist>
