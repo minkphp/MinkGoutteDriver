@@ -22,7 +22,7 @@
 
     "require-dev": {
         "mink/driver-testsuite": "dev-master",
-        "phpunit/phpunit": "9.5.11",
+        "phpunit/phpunit": "^9.0",
         "guzzlehttp/guzzle": "^7.0"
     },
 
