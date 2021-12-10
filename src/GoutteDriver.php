@@ -12,6 +12,7 @@ namespace Behat\Mink\Driver;
 
 use Behat\Mink\Driver\Goutte\Client as ExtendedClient;
 use Goutte\Client;
+use Symfony\Component\BrowserKit\HttpBrowser;
 
 /**
  * Goutte driver.
@@ -35,6 +36,11 @@ class GoutteDriver extends BrowserKitDriver
      */
     public function setBasicAuth($user, $password)
     {
+        if ($this->isClientHttpBrowser()) {
+            parent::setBasicAuth($user, $password);
+
+            return;
+        }
         if (false === $user) {
             $this->getClient()->resetAuth();
 
@@ -62,7 +68,9 @@ class GoutteDriver extends BrowserKitDriver
     public function reset()
     {
         parent::reset();
-        $this->getClient()->resetAuth();
+        if (!$this->isClientHttpBrowser()) {
+            $this->getClient()->resetAuth();
+        }
     }
 
     /**
@@ -78,5 +86,18 @@ class GoutteDriver extends BrowserKitDriver
             );
         }
         return $url;
+    }
+
+    /**
+     * Indicates whether the client is an instance of HttpBrowser
+     *
+     * As of Goutte version 4.0, the client is just an unmodified extension of
+     * the HttpBrowser class from BrowserKit.
+     *
+     * @return bool
+     */
+    protected function isClientHttpBrowser()
+    {
+        return ($this->getClient() instanceof HttpBrowser);
     }
 }
