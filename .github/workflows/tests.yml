@@ -64,7 +64,6 @@ jobs:
           vendor/bin/phpunit -v --coverage-clover=coverage.clover
 
       - name: Upload code coverage
-        if: "${{ matrix.php > '5.4' && matrix.symfony_lts == false }}"
-        run: |
-          composer require scrutinizer/ocular
-          vendor/bin/ocular code-coverage:upload --repository=g/minkphp/MinkGoutteDriver --format=php-clover coverage.clover
+        uses: codecov/codecov-action@v2
+        with:
+          files: coverage.clover

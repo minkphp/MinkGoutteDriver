@@ -6,6 +6,7 @@ Mink Goutte Driver
 [![Total Downloads](https://poser.pugx.org/behat/mink-goutte-driver/downloads.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 [![CI](https://github.com/minkphp/MinkGoutteDriver/actions/workflows/tests.yml/badge.svg)](https://github.com/minkphp/MinkGoutteDriver/actions/workflows/tests.yml)
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
+[![codecov](https://codecov.io/gh/minkphp/MinkGoutteDriver/branch/master/graph/badge.svg?token=K7GduJsQ4A)](https://codecov.io/gh/minkphp/MinkGoutteDriver)
 
 Usage Example
 -------------
