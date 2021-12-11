@@ -41,6 +41,7 @@ class GoutteDriver extends BrowserKitDriver
 
             return;
         }
+
         if (false === $user) {
             $this->getClient()->resetAuth();
 
@@ -68,6 +69,7 @@ class GoutteDriver extends BrowserKitDriver
     public function reset()
     {
         parent::reset();
+
         if (!$this->isClientHttpBrowser()) {
             $this->getClient()->resetAuth();
         }
