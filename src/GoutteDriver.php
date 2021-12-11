@@ -96,7 +96,7 @@ class GoutteDriver extends BrowserKitDriver
      *
      * @return bool
      */
-    protected function isClientHttpBrowser()
+    private function isClientHttpBrowser()
     {
         return ($this->getClient() instanceof HttpBrowser);
     }
