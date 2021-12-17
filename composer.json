@@ -15,13 +15,14 @@
     ],
 
     "require": {
-        "php":                           ">=5.4",
+        "php":                           ">=7.2",
         "behat/mink-browserkit-driver":  "~1.2@dev",
         "fabpot/goutte":                 "~1.0.4|~2.0|~3.1"
     },
 
     "require-dev": {
-        "mink/driver-testsuite": "dev-master"
+        "mink/driver-testsuite": "dev-master",
+        "symfony/error-handler": "^4.4 || ^5.0"
     },
 
     "autoload": {
