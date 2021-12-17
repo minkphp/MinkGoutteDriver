@@ -3,6 +3,7 @@
 namespace Behat\Mink\Tests\Driver\Custom;
 
 use Behat\Mink\Driver\GoutteDriver;
+use Goutte\Client;
 use PHPUnit\Framework\TestCase;
 
 class InstantiationTest extends TestCase
@@ -23,6 +24,6 @@ class InstantiationTest extends TestCase
     {
         $driver = new GoutteDriver();
 
-        $this->assertInstanceOf('Behat\Mink\Driver\Goutte\Client', $driver->getClient());
+        $this->assertInstanceOf(Client::class, $driver->getClient());
     }
 }

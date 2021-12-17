@@ -19,7 +19,7 @@ require "vendor/autoload.php";
 use Behat\Mink\Mink,
     Behat\Mink\Session,
     Behat\Mink\Driver\GoutteDriver,
-    Behat\Mink\Driver\Goutte\Client as GoutteClient;
+    Goutte\Client as GoutteClient;
 
 $mink = new Mink(array(
     'goutte' => new Session(new GoutteDriver(new GoutteClient())),
@@ -39,8 +39,8 @@ Add a file composer.json with content:
 ``` json
 {
     "require": {
-        "behat/mink":               "~1.5",
-        "behat/mink-goutte-driver": "~1.0"
+        "behat/mink":               "^1.9",
+        "behat/mink-goutte-driver": "^2.0"
     }
 }
 ```
