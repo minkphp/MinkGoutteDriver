@@ -1,3 +1,21 @@
+2.0.0 / 2021-12-29
+==================
+
+This is the last release of GoutteDriver. As of Goutte 4, Goutte is just reusing
+the HttpBrowser of `symfony/browser-kit` without any customization. This means
+that the HttpBrowser can be used directly with `behat/mink-browserkit-driver`
+instead of using this driver. This 2.0 release is meant as an upgrade path.
+
+Removed:
+
+* Removed support for PHP 7.1 and older
+* Removed support for Goutte 2 and 3
+
+New features:
+
+* Add support for Goutte 4
+* Migrated to BrowserKitDriver 2
+
 1.3.0 / 2021-10-12
 ==================
 
