@@ -8,6 +8,13 @@ Mink Goutte Driver
 [![License](https://poser.pugx.org/behat/mink-goutte-driver/license.svg)](https://packagist.org/packages/behat/mink-goutte-driver)
 [![codecov](https://codecov.io/gh/minkphp/MinkGoutteDriver/branch/master/graph/badge.svg?token=K7GduJsQ4A)](https://codecov.io/gh/minkphp/MinkGoutteDriver)
 
+Deprecation
+-----------
+
+Given that the Goutte project is deprecated in favor of using the `symfony/http-client` and
+`symfony/browser-kit` projects directly, this driver is deprecated in favor of
+`behat/mink-browserkit-driver` and won't be updated anymore.
+
 Usage Example
 -------------
 
